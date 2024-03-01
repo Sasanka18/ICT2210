@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Photographer Portfolio - Portfolio</title>
+</head>
+<body>
+  <header>
+    <h1>Photographer Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      background-color: #f1f1f1;
+      padding: 20px;
+      font-family: Arial;
+    }
+    
+    /* Center website */
+    .main {
+      max-width: 1000px;
+      margin: auto;
+    }
+    
+    h1 {
+      font-size: 50px;
+      word-break: break-all;
+    }
+    
+    .row {
+      margin: 10px -16px;
+    }
+    
+    /* Add padding BETWEEN each column */
+    .row,
+    .row > .column {
+      padding: 8px;
+    }
+    
+    /* Create three equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 33.33%;
+      display: none; /* Hide all elements by default */
+    }
+    
+    /* Clear floats after rows */ 
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Content */
+    .content {
+      background-color: white;
+      padding: 10px;
+    }
+    
+    /* The "show" class is added to the filtered elements */
+    .show {
+      display: block;
+    }
+    
+    /* Style the buttons */
+    .btn {
+      border: none;
+      outline: none;
+      padding: 12px 16px;
+      background-color: white;
+      cursor: pointer;
+    }
+    
+    .btn:hover {
+      background-color: #ddd;
+    }
+    
+    .btn.active {
+      background-color:#04AA6D;
+      color: white;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <!-- MAIN (Center website) -->
+    <div class="main">
+    
+    
+    
+    
+    
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('Wedding')"> Weddings</button>
+      <button class="btn" onclick="filterSelection('Pre-Shoots')"> Pre-Shoots</button>
+      <button class="btn" onclick="filterSelection('Private')"> Private sessions</button>
+    </div>
+    
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column Wedding">
+        <div class="content">
+          <img src="images/image1.jpg" alt="wedding" style="width:100%">
+         
+        </div>
+      </div>
+      <div class="column Wedding">
+        <div class="content">
+        <img src="images/image2.jpg" alt="wedding" style="width:100%">
+          
+        </div>
+      </div>
+      <div class="column Wedding">
+        <div class="content">
+        <img src="images/image3.jpg" alt="Wedding" style="width:100%">
+         
+        </div>
+      </div>
+      
+      <div class="column Pre-Shoots">
+        <div class="content">
+          <img src="images/image7.jpg" alt="Pre-Shoots" style="width:100%">
+          
+        </div>
+      </div>
+      <div class="column Pre-Shoots">
+        <div class="content">
+        <img src="images/image9.png" alt="Pre-Shoots" style="width:100%">
+          
+        </div>
+      </div>
+      <div class="column Pre-Shoots">
+        <div class="content">
+        <img src="images/image12.jpg" alt="Pre-Shoots" style="width:100%">
+          
+        </div>
+      </div>
+    
+      <div class="column Private">
+        <div class="content">
+          <img src="images/image4.jpg" alt="Private" style="width:100%">
+          
+        </div>
+      </div>
+      <div class="column Private">
+        <div class="content">
+        <img src="images/image5.jpg" alt="Private" style="width:100%">
+          
+        </div>
+      </div>
+      <div class="column Private">
+        <div class="content">
+        <img src="images/image 22.jpg" alt="Private" style="width:100%">
+          
+        </div>
+      </div>
+    <!-- END GRID -->
+    </div>
+    
+    <!-- END MAIN -->
+    </div>
+    
+    
+    
+    
+      <script src="script.js"></script</script>
+    
+    </body>
+    </html>
+    
+</div>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<footer>
+  <div class="footer-content">
+    <div class="copyright">
+      <p>&copy; Sasanka Rathnayake Photography</p>
+    </div>
+    <div class="contact-details">
+      <p>Contact: <a href="mailto:info@photographerportfolio.com">Sasankarathnayayke@outlook.com</a></p>
+      <p>Phone: +94776117288</p>
+      <p>Contact with: <a href="https://www.linkedin.com/in/sasanka-rathnayake-3038431a0/" target="_blank">LinkedIn</a></p>
+      <p>Contact with: <a href="https://github.com/Sasanka18/sasanka18.github" target="_blank">Github</a></p>
+    </div>
+  </div>
+</footer>
+
+
+  
+</body>
+</html>
